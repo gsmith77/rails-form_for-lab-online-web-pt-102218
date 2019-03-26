@@ -14,7 +14,6 @@ class StudentsController < ApplicationController
 
   def create
     #rails server to check if it creates a new student. need to strong params it?
-    binding.pry
     @student = Student.create(params.require())
 
   end
